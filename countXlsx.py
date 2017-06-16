@@ -7,7 +7,7 @@ dateNow = datetime.datetime.now().strftime("%y%m%d - %H")
 
 # Load in Excel Workbook & Sheet info and get ma number of rows
 wb = openpyxl.load_workbook('dc7a.xlsx')
-sheet = wb.get_sheet_by_name('Search daily Spent Cap')
+sheet = wb.get_sheet_by_name('Sheet1')
 maxRows = sheet.max_row
 
 # Loop through each cell
